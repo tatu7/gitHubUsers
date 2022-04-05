@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input,
+textarea,
+button {
+  outline: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: rgb(78, 78, 255);
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.hero {
+  border: 1px solid #5555;
+  padding: 2rem 5rem;
+  margin: 2rem 0;
+  height: 18rem;
+}
+.title {
+  font-size: 3.3rem;
+}
+.hero p {
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
+}
+.hero input {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.1rem 1.3rem;
+}
+.magic {
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgba(190, 190, 190, 0.514);
+  padding: 3rem;
+  margin-top: 10rem;
+}
+.user {
+  display: none;
+  padding: 2.3rem;
+  width: 100%;
+  height: 30rem;
+  border: 1px solid #5555;
+  margin: 3rem 0;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+}
+.left img {
+  width: 18rem;
+  height: 20rem;
+}
+.left a {
+  background-color: blue;
+  color: aliceblue;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1.2rem;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  margin-left: 2.2rem;
+}
+.buttons button {
+  padding: 0.5rem 1.3rem;
+  margin-right: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: aliceblue;
+}
+.buttons button:nth-child(1) {
+  background-color: rgb(7, 130, 201);
+}
+.buttons button:nth-child(2) {
+  background-color: #333333;
+}
+.buttons button:nth-child(3) {
+  background-color: green;
+}
+.buttons button:nth-child(4) {
+  background-color: rgb(28, 195, 247);
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  border: 1px solid #5555;
+  padding: 2rem;
+  width: 93rem;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-top: 2.2rem;
+  border-radius: 0.7rem;
+}
+.table p {
+  border-bottom: 1px solid #5555;
+  padding: 1.2rem;
+}
+.table p:last-child {
+  border: none;
+}
+.repo__title {
+  display: none;
+  font-size: 2.4rem;
+}
+.element {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #5555;
+  padding: 2.4rem;
+  margin: 1.2rem 0;
+  color: blue;
+  font-size: 1.5rem;
+}
+.element a {
+  color: aliceblue;
+  margin-left: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+}
+.element a:nth-child(1) {
+  background-color: rgb(7, 130, 201);
+}
+.element a:nth-child(2) {
+  background-color: #333333;
+}
+.element a:nth-child(3) {
+  background-color: green;
+}
+.notfound {
+  display: none;
+  margin-top: 1.4rem;
+  font-size: 1.5rem;
+  color: #333333;
+  background-color: rgba(220, 20, 60, 0.596);
+  padding: 1.3rem;
+}
