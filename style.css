@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%;
 }
+.loading {
+  display: block;
+  margin: 2.4rem auto;
+}
 a {
   text-decoration: none;
 }

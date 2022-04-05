@@ -3,14 +3,26 @@ const userBox = document.querySelector(".user");
 const magic = document.querySelector(".magic");
 const repoBox = document.querySelector(".repo");
 const repo__title = document.querySelector(".repo__title");
-
 const fetchFunc = async function (user) {
-  let dataJson = await fetch(`https://api.github.com/users/${user}`);
-  let data = await dataJson.json();
-  let repoJson = await fetch(`https://api.github.com/users/${user}/repos`);
-  let repos = await repoJson.json();
-  renderFunc(data);
-  renderRepo(repos);
+  try {
+    let dataJson = await fetch(
+      `https://api.github.com/users/${user}?client_id=90f52b3e0c35b13a39b9&client_secret=99a08bc9b29f65d3f4625b7e927e9c6381619746`
+    );
+    let data = await dataJson.json();
+    if (data.status === 404) {
+      throw new Error("iltimos qayta urining");
+    }
+    let repoJson = await fetch(`https://api.github.com/users/${user}/repos`);
+    let repos = await repoJson.json();
+    renderFunc(data);
+    renderRepo(repos);
+  } catch {
+    (er) => {
+      alert(er);
+    };
+  } finally {
+    userBox = `<img class="loading" src="./Eclipse-1s-200px.gif" />`;
+  }
 };
 userInput.addEventListener("input", () => {
   fetchFunc(`${userInput.value}`);
