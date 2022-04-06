@@ -3,6 +3,7 @@ const userBox = document.querySelector(".user");
 const magic = document.querySelector(".magic");
 const repoBox = document.querySelector(".repo");
 const repo__title = document.querySelector(".repo__title");
+const loading = document.querySelector(".loading");
 const fetchFunc = async function (user) {
   try {
     let dataJson = await fetch(
@@ -21,7 +22,7 @@ const fetchFunc = async function (user) {
       alert(er);
     };
   } finally {
-    userBox = `<img class="loading" src="./Eclipse-1s-200px.gif" />`;
+    loading.style.display = "none";
   }
 };
 userInput.addEventListener("input", () => {
